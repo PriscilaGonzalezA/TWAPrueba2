@@ -10,10 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [ 'as' => 'home', 'uses' => 'mapController@inicio']);
 
-Route::get('/', function () {
-    return view('inicio');
-});
 Route::get('/inicio', ['as' => 'home',function(){
   return view('inicio');
 }]);
