@@ -12,5 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('inicio');
+});
+Route::get('/inicio', ['as' => 'home',function(){
+  return view('inicio');
+}]);
+Route::get('/mapa/{direccion?}',['as'=> 'ruta', function ($direccion = "Angamos") {
+    //$direcciones = ['abc', 'def', 'ghi', 'jkl','mno','pqr'];
+    $direcciones = [];
+    return view('mapa', compact('direccion','direcciones'));
+}]);
+Route::get('/prueba',function(){
+    return view('prueba');
 });
