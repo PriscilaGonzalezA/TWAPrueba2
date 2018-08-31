@@ -89,7 +89,11 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div style="width: 600px; height: 500px;">
+                {!! Mapper::render() !!}
+            </div>
             </div>
         </div>
+
     </body>
 </html>

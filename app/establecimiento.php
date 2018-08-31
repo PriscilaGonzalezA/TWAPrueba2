@@ -4,23 +4,18 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class establecimiento extends Model
+class Establecimiento extends Model
 {
     public $timestamps = false;
-    protected $table ="establecimiento";
-    protected $fillable = ['id','coordenadas','cant_estacionamiento','cant_disponible','direccion'];
+    protected $table = 'Establecimiento';
+    protected $fillable = ['nombre','coordenada_x','coordenada_y','cant_estacionamiento','cant_disponible','direccion'];
 
-        public function tarifaBloque()
+        public function tarifa()
     {
-        return $this->hasMany('App\tarifaBloque');
+        return $this->hasMany('App\Tarifa','Establecimiento_id');
     }
             public function estacionamiento()
     {
-        return $this->hasMany('App\estacionamiento');
+        return $this->hasMany('App\Estacionamiento','Establecimiento_id');
     }
-            public function usuario()
-    {
-        return $this->belongsTo('App\Usuario');
-    }
-
 }
