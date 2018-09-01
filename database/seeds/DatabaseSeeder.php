@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 
-
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,8 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-			App\Establecimiento::class,
-			
+			establecimientoTableSeeder::class,
+			estacionamientoTableSeeder::class,
+			tarifaBloqueTableSeeder::class,
 		]);
     }
 }

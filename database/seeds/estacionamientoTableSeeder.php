@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\establecimiento;
-use App\estacionamiento;
+use App\Establecimiento;
+use App\Estacionamiento;
 
 class estacionamientoTableSeeder extends Seeder
 {
@@ -13,41 +13,41 @@ class estacionamientoTableSeeder extends Seeder
      */
     public function run()
     {
-        estacionamiento::truncate();
+        Estacionamiento::truncate();
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Estacionamiento Maipu')->first();
-		estacionamiento::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Estacionamiento Maipu')->first();
+		Estacionamiento::create([
 			'estado'	=> 'disponible',
-			'tamanio'	=> '2x2',
-			'establecimiento_id'	=> $establecimiento->id
+			'tamanio'	=> '2',
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Full Lavado Estacionamiento')->first();
-		estacionamiento::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Full Lavado Estacionamiento')->first();
+		Estacionamiento::create([
 			'estado'	=> 'disponible',
-			'tamanio'	=> '2x2',
-			'establecimiento_id'	=> $establecimiento->id
+			'tamanio'	=> '2',
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Estacionamiento 2 pro')->first();
-		estacionamiento::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Estacionamiento 2 pro')->first();
+		Estacionamiento::create([
 			'estado'	=> 'disponible',
-			'tamanio'	=> '2x2',
-			'establecimiento_id'	=> $establecimiento->id
+			'tamanio'	=> '2',
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Empresa de Estacionamientos Astore')->first();
-		estacionamiento::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Empresa de Estacionamientos Astore')->first();
+		Estacionamiento::create([
 			'estado'	=> 'disponible',
-			'tamanio'	=> '2x2',
-			'establecimiento_id'	=> $establecimiento->id
+			'tamanio'	=> '2',
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'ProWash Jumbo Antofagasta')->first();
-		estacionamiento::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'ProWash Jumbo Antofagasta')->first();
+		Estacionamiento::create([
 			'estado'	=> 'disponible',
-			'tamanio'	=> '2x2',
-			'establecimiento_id'	=> $establecimiento->id
+			'tamanio'	=> '2',
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
     }
 }

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\establecimiento;
-use App\tarifaBloque;
+use App\Tarifa;
 
 
 class tarifaBloqueTableSeeder extends Seeder
@@ -14,41 +14,41 @@ class tarifaBloqueTableSeeder extends Seeder
      */
     public function run()
     {
-        tarifaBloque::truncate();
+        Tarifa::truncate();
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Estacionamiento Maipu')->first();
-		tarifabloque::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Estacionamiento Maipu')->first();
+		Tarifa::create([
 			'valorHora'	=> '500',
 			'dia'	=> 'todos los dias',
-			'establecimiento_id'	=> $establecimiento->id
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Full Lavado Estacionamiento')->first();
-		tarifaBloque::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Full Lavado Estacionamiento')->first();
+		Tarifa::create([
 			'valorHora'	=> '800',
 			'dia'	=> 'todos los dias',
-			'establecimiento_id'	=> $establecimiento->id
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Estacionamiento 2 pro')->first();
-		tarifaBloque::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Estacionamiento 2 pro')->first();
+		Tarifa::create([
 			'valorHora'	=> '1000',
 			'dia'	=> 'todos los dias',
-			'establecimiento_id'	=> $establecimiento->id
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'Empresa de Estacionamientos Astore')->first();
-		tarifaBloque::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'Empresa de Estacionamientos Astore')->first();
+		Tarifa::create([
 			'valorHora'	=> '1100',
 			'dia'	=> 'todos los dias',
-			'establecimiento_id'	=> $establecimiento->id
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
 
-		$establecimiento = establecimiento::all()->where('nombre', 'ProWash Jumbo Antofagasta')->first();
-		tarifaBloque::create([
+		$establecimiento = Establecimiento::all()->where('nombre', 'ProWash Jumbo Antofagasta')->first();
+		Tarifa::create([
 			'valorHora'	=> '1200',
 			'dia'	=> 'todos los dias',
-			'establecimiento_id'	=> $establecimiento->id
+			'Establecimiento_id'	=> $establecimiento->id
 		]);
     }
 }
