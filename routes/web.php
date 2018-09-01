@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', [ 'as' => 'home', 'uses' => 'mapController@inicio']);
+Route::get('/', [ 'as' => 'welcome', 'uses' => 'mapController@inicio']);
+Route::get('/inicio',['as' => 'home', 'uses'=>'EstacionamientosController@inicio']);

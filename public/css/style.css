@@ -1,0 +1,55 @@
+html {
+    min-height: 100%;
+    position: relative;
+    background-color: #b0d4f1;
+}
+body {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.header{
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 10px;
+    height: 70px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+.topright {
+    position: absolute;
+    top: 80px;
+    right: 8%;
+    font-size: 18px;
+}
+
+header h1{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 5px 0 0 20px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+img{
+border-radius: 10%;
+    width: 5%;
+}
+.header-right{
+    float: right;
+}
+footer {
+    background-color: dodgerblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+
+.contenido{
+    padding-top: 100px;
+}
