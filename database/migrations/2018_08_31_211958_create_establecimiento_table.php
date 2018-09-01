@@ -16,8 +16,8 @@ class CreateEstablecimientoTable extends Migration
         Schema::create('Establecimiento', function (Blueprint $table) {
             $table->increments('id');
             $table -> string('nombre');
-            $table -> integer('coordenada_x');
-            $table -> integer('coordenada_y');
+            $table -> double('coordenada_x');
+            $table -> double('coordenada_y');
             $table -> integer('cant_estacionamiento');
             $table -> integer('cant_disponible');
             $table -> string('direccion');
