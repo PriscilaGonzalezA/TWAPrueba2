@@ -10,6 +10,8 @@
             <th>Nombre estacionamiento</th>
             <th>Precio por hora</th>
             <th>Direccion</th>
+            <th>Estacionamientos</th>
+            <th>Est. Disponibles</th>
         </tr>
         </thead>
         @foreach($establecimiento as $es)
@@ -21,6 +23,8 @@
                 @endif
             @endforeach
             <th>{{$es->direccion}}</th>
+            <th>{{ $es->presenter()->getEstacionamientos($es) }}</th>
+            <th>{{ $es->presenter()->getEstaDisponibles($es) }}</th>
         </tr>
         @endforeach
     </table>

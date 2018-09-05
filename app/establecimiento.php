@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Presenters\EstablecimientoPresenter;
 
 class Establecimiento extends Model
 {
@@ -17,5 +18,10 @@ class Establecimiento extends Model
             public function estacionamiento()
     {
         return $this->hasMany('App\Estacionamiento','Establecimiento_id');
+    }
+
+    public function presenter()
+    {
+        return new EstablecimientoPresenter($this);
     }
 }

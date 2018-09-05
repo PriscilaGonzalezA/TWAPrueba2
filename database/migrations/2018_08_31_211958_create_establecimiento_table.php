@@ -18,8 +18,6 @@ class CreateEstablecimientoTable extends Migration
             $table -> string('nombre');
             $table -> double('coordenada_x');
             $table -> double('coordenada_y');
-            $table -> integer('cant_estacionamiento');
-            $table -> integer('cant_disponible');
             $table -> string('direccion');
         });
     }
