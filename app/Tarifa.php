@@ -8,10 +8,10 @@ class Tarifa extends Model
 {
     public $timestamps = false;
     protected $table = 'Tarifa';
-    protected $fillable = ['valorHora','dia','Establecimiento_id'];
+    protected $fillable = ['Establecimiento_id','valorHora','dia'];
 
     public function establecimiento()
     {
-        return $this->belongsTo('App\Establecimiento','Establecimiento_id');
+        return $this->belongsTo(Establecimiento::class);
     }
 }

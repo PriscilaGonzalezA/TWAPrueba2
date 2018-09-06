@@ -3,12 +3,21 @@
 @section('contenido')
 
     <link href="{{ asset('css/tabla.css') }}" rel="stylesheet">
-    <div style="width: 600px; height: 500px;">
+    <div style="width:80%; height: 500px; margin: 0 auto;">
+        <div style="width:70%; float:left;">
         {!! Mapper::render() !!}
+        </div>
+        <div style="width:30%; float:left;">
+            <br>
+            <div id="infoPanel" style="border-radius: 10px; border: 2px solid; margin-left: 30px; background-color: white; text-align:center;">
+            hola
+            </div>
+        </div>
+        <div style="clear:both"></div>
     </div>
-    <h1>Lista de estacionamientos:</h1>
+    <br>
     <div id="main-container">
-    <div id="infoPanel"></div>
+    <h1>Lista de estacionamientos:</h1>
     <table>
         <thead>
         <tr>

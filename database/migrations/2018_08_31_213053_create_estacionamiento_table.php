@@ -15,9 +15,9 @@ class CreateEstacionamientoTable extends Migration
     {
         Schema::create('Estacionamiento', function (Blueprint $table) {
             $table->increments('id');
+            $table -> integer('Establecimiento_id')-> unsigned();
             $table-> boolean('estado');
             $table -> integer('tamanio');
-            $table -> integer('Establecimiento_id');
         });
     }
 

@@ -15,9 +15,9 @@ class CreateTarifaBloqueTable extends Migration
     {
         Schema::create('Tarifa', function (Blueprint $table) {
             $table->increments('id');
+            $table -> integer('Establecimiento_id')-> unsigned();
             $table -> integer('valorHora');
             $table -> string('dia');
-            $table -> integer('Establecimiento_id');
         });
     }
 
