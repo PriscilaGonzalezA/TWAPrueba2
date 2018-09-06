@@ -1,14 +1,21 @@
 @extends('layout')
 
 @section('contenido')
-    <div class="mapa">
-        {!! Mapper::render() !!}
-    </div>
-
 
     <link href="{{ asset('css/tabla.css') }}" rel="stylesheet">
-    <h1>Lista de estacionamientos:</h1>
+    <div style="width:90%; height: 500px; margin: 0 auto; ">
+        <div class="mapa">
+        {!! Mapper::render() !!}
+        </div>
+        <div style="width:30%; float:left;">
+            <br>
+            <div id="infoPanel" style="border-radius: 10px; margin-left: 30px; background-color: white; text-align:center;">
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
     <div id="main-container">
+    <h1>Lista de estacionamientos:</h1>
     <table>
         <thead>
         <tr>

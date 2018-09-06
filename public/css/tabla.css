@@ -21,8 +21,7 @@ tr:nth-child(even){
     background-color: #ddd;
 }
 .mapa{
-    position: static;
+    float: left;
     border: 3px solid blue;
-    width: 50%;
-    height: 60%;
+    width: 60%;
 }

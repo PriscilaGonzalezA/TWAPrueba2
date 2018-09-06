@@ -8,7 +8,7 @@ class Estacionamiento extends Model
 {
     public $timestamps = false;
     protected $table = 'Estacionamiento';
-    protected $fillable = ['estado','tamanio','Establecimiento_id'];
+    protected $fillable = ['Establecimiento_id','estado','tamanio'];
 
     public function establecimiento()
     {

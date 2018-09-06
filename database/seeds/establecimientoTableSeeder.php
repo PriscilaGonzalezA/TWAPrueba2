@@ -15,38 +15,38 @@ class establecimientoTableSeeder extends Seeder
         Establecimiento::truncate();
         
 		Establecimiento::create([
-			'nombre'	=> 'Estacionamiento Maipu',
-			'coordenada_x'	=> '-23.649759',
-			'coordenada_y'	=> '-70.398818',
-			'direccion'	=> 'Maipú 527, Antofagasta, Región de Antofagasta'
+			'nombre'	=> 'Estacionamiento Copec',
+			'coordenada_x'	=> '-23.6788069',
+			'coordenada_y'	=> '-70.4079617',
+			'direccion'	=> 'Av. Angamos 0633, Antofagasta'
 		]);
 
 		Establecimiento::create([
-			'nombre'	=> 'Full Lavado Estacionamiento',
-			'coordenada_x'	=> '-23.656426',
+			'nombre'	=> 'Full Estacionamiento Previa',
+			'coordenada_x'	=> '-23.6768441',
 			'coordenada_y'	=> '-70.400123',
-			'direccion'	=> 'Coquimbo 887, Antofagasta, Región de Antofagasta'
+			'direccion'	=> 'Av. angamos 0310, Antofagasta'
 		]);
 
 		Establecimiento::create([
-			'nombre'	=> 'Estacionamiento 2 pro',
-			'coordenada_x'	=> '-23.657221',
-			'coordenada_y'	=> '-70.399482',
-			'direccion'	=> 'Coquimbo 952, Antofagasta, Región de Antofagasta'
+			'nombre'	=> 'Estacionamiento Huanchaca',
+			'coordenada_x'	=> '-23.6863467',
+			'coordenada_y'	=> '-70.4126742',
+			'direccion'	=> 'Av. Angamos 01606, Antofagasta'
 		]);
 
 		Establecimiento::create([
-			'nombre'	=> 'Empresa de Estacionamientos Astore',
-			'coordenada_x'	=> '-23.648508',
-			'coordenada_y'	=> '-70.395213',
-			'direccion'	=> 'Calle Sucre 656, Antofagasta, Región de Antofagasta'
+			'nombre'	=> 'Estacionamientos Antofagasta',
+			'coordenada_x'	=> '-23.678268',
+			'coordenada_y'	=> '-70.4034291',
+			'direccion'	=> 'Osvaldo Silva Castellón 115, Antofagasta'
 		]);
 
 		Establecimiento::create([
-			'nombre'	=> 'ProWash Jumbo Antofagasta',
-			'coordenada_x'	=> '-23.667432',
-			'coordenada_y'	=> '-70.405077',
-			'direccion'	=> '1270236, Av. Angamos 745 Estacionamiento Jumbo, Antofagasta, Región de Antofagasta'
+			'nombre'	=> 'El Torito Bravo',
+			'coordenada_x'	=> '-23.678483',
+			'coordenada_y'	=> '-70.4112329',
+			'direccion'	=> 'Av. República de Croacia 0556, Antofagasta'
 		]);
     }
 }

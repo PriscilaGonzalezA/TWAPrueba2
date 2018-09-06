@@ -9,15 +9,16 @@ class Establecimiento extends Model
 {
     public $timestamps = false;
     protected $table = 'Establecimiento';
-    protected $fillable = ['nombre','coordenada_x','coordenada_y','cant_estacionamiento','cant_disponible','direccion'];
+    protected $fillable = ['nombre','coordenada_x','coordenada_y','direccion'];
 
-        public function tarifa()
+    public function tarifa()
     {
-        return $this->hasMany('App\Tarifa','Establecimiento_id');
+        return $this->hasMany(Tarifa::class);
     }
-            public function estacionamiento()
+
+    public function estacionamiento()
     {
-        return $this->hasMany('App\Estacionamiento','Establecimiento_id');
+        return $this->hasMany(Estacionamiento::class,'Establecimiento_id');
     }
 
     public function presenter()
