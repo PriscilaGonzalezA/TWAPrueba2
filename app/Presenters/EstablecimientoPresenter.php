@@ -29,7 +29,7 @@ class EstablecimientoPresenter extends Presenter
        $tarifa = Tarifa::where('Establecimiento_id', $establecimiento->id)->first();
        $tari = $tarifa->valorHora;
 
-       return 1;
+       return $tari;
     }
 
 
