@@ -13,9 +13,9 @@ class Establecimiento extends Model
 
     public function tarifa()
     {
-        return $this->hasMany(Tarifa::class);
+        return $this->hasMany(Tarifa::class,'Establecimiento_id');
     }
-
+    
     public function estacionamiento()
     {
         return $this->hasMany(Estacionamiento::class,'Establecimiento_id');

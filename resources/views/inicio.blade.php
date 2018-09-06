@@ -9,8 +9,7 @@
         </div>
         <div style="width:30%; float:left;">
             <br>
-            <div id="infoPanel" style="border-radius: 10px; border: 2px solid; margin-left: 30px; background-color: white; text-align:center;">
-            hola
+            <div id="infoPanel" style="border-radius: 10px; border: 0px solid; margin-left: 30px; background-color: white; text-align:center;">
             </div>
         </div>
         <div style="clear:both"></div>

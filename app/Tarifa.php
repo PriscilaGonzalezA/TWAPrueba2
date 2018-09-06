@@ -10,8 +10,8 @@ class Tarifa extends Model
     protected $table = 'Tarifa';
     protected $fillable = ['Establecimiento_id','valorHora','dia'];
 
-    public function establecimiento()
+    public function tarifa()
     {
-        return $this->belongsTo(Establecimiento::class);
+        return $this->belongsTo(Establecimiento::class,'Establecimiento_id');
     }
 }
