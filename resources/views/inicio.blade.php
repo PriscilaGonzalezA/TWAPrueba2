@@ -8,6 +8,7 @@
     </div>
     <h1>Lista de estacionamientos:</h1>
     <div id="main-container">
+    <div id="infoPanel"></div>
     <table>
         <thead>
         <tr>
