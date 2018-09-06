@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mapper;
+use App\Estacionamiento;
+use App\Establecimiento;
+use App\Tarifa;
 
 class mapController extends Controller
 {
@@ -17,7 +20,14 @@ class mapController extends Controller
 	//	}
         Mapper::marker(-23.6777769, -70.4116944, ['eventMouseOver' => 'console.log("left click");']);
    //     Mapper::marker(-23.657202, -70.401854, ['symbol' => 'circle', 'scale' => 1000]);
-		return view('welcome');
+
+        //Recolecta estacionamientos
+
+            $establecimiento = Establecimiento::all();
+            $estacionamineto = Estacionamiento::all();
+            $tarifa = Tarifa::all();
+
+            return view('inicio',compact('establecimiento','estacionamineto','tarifa'));
 	}
 
 }

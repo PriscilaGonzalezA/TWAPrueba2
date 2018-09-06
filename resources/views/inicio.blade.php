@@ -1,7 +1,11 @@
 @extends('layout')
 
 @section('contenido')
+
     <link href="{{ asset('css/tabla.css') }}" rel="stylesheet">
+    <div style="width: 600px; height: 500px;">
+        {!! Mapper::render() !!}
+    </div>
     <h1>Lista de estacionamientos:</h1>
     <div id="main-container">
     <table>

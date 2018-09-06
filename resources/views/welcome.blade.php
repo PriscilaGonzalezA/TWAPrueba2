@@ -25,9 +25,6 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
 
                 <div style="width: 600px; height: 500px;">
                 {!! Mapper::render() !!}
